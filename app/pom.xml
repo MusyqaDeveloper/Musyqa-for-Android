@@ -11,7 +11,7 @@
 
   <packaging>apk</packaging>
   <name>Musyqa for Android</name>
-  <artifactId>musyqa-android</artifactId>
+  <artifactId>Musyqa</artifactId>
   <url>https://github.com/MusyqaDeveloper/Musyqa-for-Android</url>
 
   <dependencies>
