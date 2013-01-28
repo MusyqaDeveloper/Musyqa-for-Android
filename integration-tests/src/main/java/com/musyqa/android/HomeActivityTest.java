@@ -15,13 +15,6 @@ import android.test.ActivityInstrumentationTestCase2;
 public class HomeActivityTest extends ActivityInstrumentationTestCase2<HomeActivity> {
 
     public HomeActivityTest() {
-        super("com.musyqa.android", HomeActivity.class);
-    }
-
-    /**
-     * Test smoke.
-     */
-    public void testSmoke() {
-        assertTrue(false);
+        super(HomeActivity.class);
     }
 }

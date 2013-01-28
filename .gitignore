@@ -44,3 +44,7 @@ proguard/
 *.ipr
 *.iws
 .idea/
+
+
+# Special classes
+Config.java
