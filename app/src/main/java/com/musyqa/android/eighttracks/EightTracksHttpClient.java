@@ -9,6 +9,7 @@ import com.musyqa.android.Config;
 
 import java.io.IOException;
 import java.io.Reader;
+import java.util.Locale;
 
 /**
  * The Class EightTracksHttpClient.
@@ -43,7 +44,10 @@ public class EightTracksHttpClient {
      */
     public MixSet getMixSet(int perPage, int page) throws IOException {
         try {
-            String url = String.format("mixes.json?per_page=%d&page=%d", perPage, page);
+            String url = String.format(
+                    Locale.getDefault(),
+                    "mixes.json?per_page=%d&page=%d", perPage, page);
+            
             return fromJson(ok(get(url)), MixSet.class);
         } catch (HttpRequestException e) {
             throw e.getCause();
