@@ -12,5 +12,6 @@
 	<color name="background">@color/color1</color>
 	<color name="textColorPrimary">@color/color3</color>
 	<color name="textColorSecondary">@color/color5</color>
+	<color name="textColorHint">@color/color2</color>
 
 </resources>
