@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<style name="Theme.Musyqa.Light" parent="@style/Theme.Musyqa">
+		<item name="android:editTextStyle">@style/EditTextTheme.Musyqa.Light</item>
+		<item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewTheme.Musyqa.Light</item>
+		<item name="android:checkboxStyle">@style/CheckBoxTheme.Musyqa.Light</item>
+		<item name="android:radioButtonStyle">@style/RadioButtonTheme.Musyqa.Light</item>
+		<item name="android:buttonStyle">@style/ButtonTheme.Musyqa.Light</item>
+		<item name="android:imageButtonStyle">@style/ImageButtonTheme.Musyqa.Light</item>
+		<item name="android:progressBarStyleHorizontal">@style/ProgressBarTheme.Musyqa.Light</item>
+	</style>
+
+</resources>

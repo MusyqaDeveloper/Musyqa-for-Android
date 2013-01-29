@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- color pallete -->
+	<color name="color1">#FCFCFC</color>
+	<color name="color2">#C0ADDB</color>
+	<color name="color3">#9061C2</color>
+	<color name="color4">#5F4495</color>
+	<color name="color5">#492984</color>
+
+	<!-- style colors -->
+	<color name="background">@color/color1</color>
+	<color name="textColorPrimary">@color/color3</color>
+	<color name="textColorSecondary">@color/color5</color>
+
+</resources>

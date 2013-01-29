@@ -48,3 +48,4 @@ proguard/
 
 # Special classes
 Config.java
+previews.xml
