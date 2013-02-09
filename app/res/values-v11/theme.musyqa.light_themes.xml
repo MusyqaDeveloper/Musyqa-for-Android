@@ -3,7 +3,7 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
 	<style name="Theme.Musyqa.Light" parent="@style/Theme.Musyqa">
-		<item name="android:editTextBackground">@drawable/edit_text_holo_light</item>
+		<item name="android:editTextBackground">@drawable/edit_text_background</item>
 		<item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewTheme.Musyqa.Light</item>
 		<item name="android:listChoiceIndicatorMultiple">@drawable/btn_check_holo_light</item>
 		<item name="android:listChoiceIndicatorSingle">@drawable/btn_radio_holo_light</item>

@@ -47,7 +47,7 @@ public class EightTracksHttpClient {
             String url = String.format(
                     Locale.getDefault(),
                     "mixes.json?per_page=%d&page=%d", perPage, page);
-            
+
             return fromJson(ok(get(url)), MixSet.class);
         } catch (HttpRequestException e) {
             throw e.getCause();
@@ -95,7 +95,8 @@ public class EightTracksHttpClient {
     protected HttpRequest get(final String url) {
         return HttpRequest
                 .get(BASE_URL + url)
-                .header("X-Api-Key", Config.ApiKeys.EIGHT_TRACKS);
+                .header("X-Api-Key", Config.ApiKeys.EIGHT_TRACKS)
+                .header("X-Api-Version", 2);
     }
 
     /**

@@ -9,7 +9,7 @@
 	<color name="color5">#492984</color>
 
 	<!-- style colors -->
-	<color name="background">@color/color1</color>
+	<color name="background">#f3f3f3</color>
 	<color name="textColorPrimary">@color/color3</color>
 	<color name="textColorSecondary">@color/color5</color>
 	<color name="textColorHint">@color/color2</color>
