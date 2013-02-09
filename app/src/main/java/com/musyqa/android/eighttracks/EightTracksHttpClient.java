@@ -55,6 +55,35 @@ public class EightTracksHttpClient {
     }
 
     /**
+     * Gets the tags.
+     * 
+     * @return the tags
+     * @throws IOException Signals that an I/O exception has occurred.
+     */
+    public Tags getTags() throws IOException {
+        try {
+            return fromJson(ok(get("tags.json")), Tags.class);
+        } catch (HttpRequestException e) {
+            throw e.getCause();
+        }
+    }
+
+    /**
+     * Search tags.
+     * 
+     * @param q the q
+     * @return the tags
+     * @throws IOException Signals that an I/O exception has occurred.
+     */
+    public Tags searchTags(String q) throws IOException {
+        try {
+            return fromJson(ok(get(String.format("tags.json?q=%s", q))), Tags.class);
+        } catch (HttpRequestException e) {
+            throw e.getCause();
+        }
+    }
+
+    /**
      * Create object of class type from content of request
      * 
      * @param request

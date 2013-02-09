@@ -29,6 +29,14 @@ public class Response {
     @JsonProperty(value = "logged_in")
     private boolean loggedIn;
 
+    /** The next page. */
+    @JsonProperty(value = "next_page")
+    private int nextPage;
+
+    /** The previous page. */
+    @JsonProperty(value = "previous_page")
+    private String previousPage;
+
     /** The status. */
     private String status;
 
@@ -66,6 +74,24 @@ public class Response {
      */
     public String getErrors() {
         return errors;
+    }
+
+    /**
+     * Gets the next page.
+     * 
+     * @return the next page
+     */
+    public int getNextPage() {
+        return nextPage;
+    }
+
+    /**
+     * Gets the previous page.
+     * 
+     * @return the previous page
+     */
+    public String getPreviousPage() {
+        return previousPage;
     }
 
     /**
@@ -129,6 +155,24 @@ public class Response {
      */
     public void setLoggedIn(boolean loggedIn) {
         this.loggedIn = loggedIn;
+    }
+
+    /**
+     * Sets the next page.
+     * 
+     * @param nextPage the new next page
+     */
+    public void setNextPage(int nextPage) {
+        this.nextPage = nextPage;
+    }
+
+    /**
+     * Sets the previous page.
+     * 
+     * @param previousPage the new previous page
+     */
+    public void setPreviousPage(String previousPage) {
+        this.previousPage = previousPage;
     }
 
     /**
