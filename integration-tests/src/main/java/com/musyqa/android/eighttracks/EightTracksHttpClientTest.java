@@ -66,12 +66,12 @@ public class EightTracksHttpClientTest extends AndroidTestCase {
         EightTracksHttpClient httpClient = new EightTracksHttpClient();
         Tags tags;
 
-        tags = httpClient.searchTags("lo");
+        tags = httpClient.searchTags("lo", 10, 0);
         assertNotNull(tags);
         assertNotNull(tags.getTags());
-        assertTrue(tags.getTags().size() > 0);
+        assertEquals(10, tags.getTags().size());
 
-        tags = httpClient.searchTags("l");
+        tags = httpClient.searchTags("l", 10, 0);
         assertNotNull(tags);
         assertNotNull(tags.getTags());
         assertTrue(tags.getTags().size() == 0);

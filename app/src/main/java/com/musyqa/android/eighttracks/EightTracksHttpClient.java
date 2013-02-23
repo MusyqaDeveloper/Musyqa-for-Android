@@ -14,7 +14,7 @@ import java.util.Locale;
 /**
  * The Class EightTracksHttpClient.
  */
-public class EightTracksHttpClient {
+public class EightTracksHttpClient implements EightTracksApi {
 
     private static final String BASE_URL = "http://8tracks.com/";
 
@@ -75,9 +75,12 @@ public class EightTracksHttpClient {
      * @return the tags
      * @throws IOException Signals that an I/O exception has occurred.
      */
-    public Tags searchTags(String q) throws IOException {
+    public Tags searchTags(String q, int perPage, int page) throws IOException {
         try {
-            return fromJson(ok(get(String.format("tags.json?q=%s", q))), Tags.class);
+            return fromJson(
+                    ok(get(
+                    String.format("tags.json?q=%s&per_page=%d&page=%d", q, perPage, page)
+                    )), Tags.class);
         } catch (HttpRequestException e) {
             throw e.getCause();
         }
